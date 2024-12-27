@@ -1,0 +1,11 @@
+div button{
+    background-color: black;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+
+}
+div button:hover{
+    background-color: white;
+    color: black;
+}

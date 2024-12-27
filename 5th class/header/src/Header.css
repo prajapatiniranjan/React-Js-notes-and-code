@@ -1,0 +1,16 @@
+
+.header {
+  background-color: #282c34;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ ul li a{
+    color: white;
+    text-decoration: none;
+ }
