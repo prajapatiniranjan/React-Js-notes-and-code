@@ -19,8 +19,15 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault(); 
     console.log(input);
-
+    if(input.username=="" || input.email=="")
+    {
+      alert("Both field are required")
+    }
+    else{
  localStorage.setItem("locate", JSON.stringify(input));
+
+    }
+
   };
 
   return (
