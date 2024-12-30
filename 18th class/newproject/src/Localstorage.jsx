@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-
+import Login from "./Login";
 export default function Form() {
   const [input, setInput] = useState({
     username: "",
     email: "",
-   
   });
+  let [status, setStatus] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -13,27 +13,26 @@ export default function Form() {
       ...input,
       [name]: value,
     });
-    
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
     console.log(input);
-//     if(input.username=="" || input.email=="")
-//     {
-//       alert("Both field are required")
-//     }
-//     else{
-//  localStorage.setItem("locate", JSON.stringify(input));
+    if (input.username == "" || input.email == "") {
+      alert("Both field are required");
+    } else {
+      localStorage.setItem("locate", JSON.stringify(input));
+      setStatus(true);
+    }
 
-//     }
-
-(input.username === "" || input.email === "") 
-    ? alert("Both fields are required")
-    : localStorage.setItem("locate", JSON.stringify(input));
-
-
+    // (input.username === "" || input.email === "")
+    //     ? alert("Both fields are required")
+    //     : localStorage.setItem("locate", JSON.stringify(input));
   };
+
+  if (status) {
+    return <Login/>;
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -55,8 +54,7 @@ export default function Form() {
       />
       <br />
       <br />
-     
-     
+
       <br />
       <br />
       <input type="submit" />
