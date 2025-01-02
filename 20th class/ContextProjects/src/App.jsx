@@ -1,14 +1,17 @@
 import React, { createContext } from 'react';
-import Child2 from './Child2';
+import Child1 from './Child1';
 
 export const DataContext = createContext();
 
-let data = "New Year"
+let data = "New Year";
+let newdata = "New child 1 to new child 2";
 
 function App() {
+  const contextValue = { data, newdata };
+
   return (
-    <DataContext.Provider value={data}>
-      <Child2 />
+    <DataContext.Provider value={contextValue}>
+      <Child1 />
     </DataContext.Provider>
   );
 }

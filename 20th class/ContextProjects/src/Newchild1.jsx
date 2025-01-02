@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Newchild2 from './Newchild2';
 
-function Newchild1() {
+const Newchild1 = () => {
   return (
-    <div>Newchild1</div>
-  )
-}
+    <>
+      <h1>Newchild1</h1>
+      <Newchild2 />
+    </>
+  );
+};
 
-export default Newchild1
+export default Newchild1;
