@@ -4,10 +4,10 @@ import Child1 from './Child1';
 export const DataContext = createContext();
 
 let data = "New Year";
-let newdata = "New child 1 to new child 2";
+let newdata = "It's 2025 ";
 
 function App() {
-  const contextValue = { data, newdata };
+  // const contextValue = { data, newdata };
 
   return (
     <DataContext.Provider value={contextValue}>
