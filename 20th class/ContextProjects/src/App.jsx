@@ -7,7 +7,8 @@ let data = "New Year";
 let newdata = "It's 2025 ";
 
 function App() {
-  // const contextValue = { data, newdata };
+  // Define contextValue to provide both data and newdata
+  const contextValue = { data, newdata };
 
   return (
     <DataContext.Provider value={contextValue}>

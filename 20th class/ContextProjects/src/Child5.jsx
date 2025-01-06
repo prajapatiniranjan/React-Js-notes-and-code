@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 export default function Child5() {
+  const [ordata, setOrdata] = useState(null); 
   
-    let ordata 
-  
-    return (
-    <div>Child5</div>
-  )
+  return (
+    <div>
+      Child5
+      {ordata && <p>{ordata}</p>} 
+    </div>
+  );
 }

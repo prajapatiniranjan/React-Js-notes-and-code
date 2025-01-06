@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export default function Child6() {
+export default function Child5() {
   return (
-    <div>Child6</div>
-  )
+    <div>Child5</div>
+  );
 }

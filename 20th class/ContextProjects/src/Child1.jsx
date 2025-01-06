@@ -1,13 +1,15 @@
-import React from 'react';
-import Child2 from './Child2';
+import React, { useContext } from 'react';
+import { DataContext } from './App';
 
-const Child1 = () => {
+function Child1() {
+  const { data, newdata } = useContext(DataContext);  // Access the context values
+
   return (
-    <>
-      <h1>Child1</h1>
-      <Child2 />
-    </>
+    <div>
+      <h1>{data}</h1>
+      <p>{newdata}</p>
+    </div>
   );
-};
+}
 
 export default Child1;
