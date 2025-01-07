@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 function About() {
 
@@ -8,9 +8,13 @@ function About() {
         nav('/contact')
     }
 
+    const {name} = useParams();
+    console.log(name);
+
   return (
 
     <>
+    <h5> about {name}</h5>
     <div>
       <h1>About Page</h1>
       <p>Welcome to the About Page.</p>
