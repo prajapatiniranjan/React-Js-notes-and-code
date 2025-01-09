@@ -42,7 +42,7 @@ function Axios() {
   let [apidata, setApidata] = useState([]);
 
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/todos')
+    axios.get('http://localhost:3000/Student')
       .then(res => {
         console.log(res.data);
         setApidata(res.data); 
@@ -61,10 +61,11 @@ function Axios() {
         </thead>
         <tbody>
           {apidata.map((item) => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-              <td>{item.userId}</td> 
-              <td>{item.title}</td>
+            <tr>
+              <td>{item.name}</td>
+              <td>{item.age}</td> 
+              <td>{item.contact}</td>
+              <td>{item.city}</td>
             </tr>
           ))}
         </tbody>

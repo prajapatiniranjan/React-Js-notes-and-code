@@ -1,0 +1,25 @@
+{
+  "Student": [
+    {
+      "name": "Niranjan",
+      "age": 20,
+      "contact": 1234567890,
+      "city": "Bhopal",
+      "id": "c8e9"
+    },
+    {
+      "name": "Niranjan",
+      "age": 20,
+      "contact": 1234567890,
+      "city": "Bhopal",
+      "id": "7173"
+    },
+    {
+      "name": "Niranjan",
+      "age": 20,
+      "contact": 1234567890,
+      "city": "Bhopal",
+      "id": "0a60"
+    }
+  ]
+}
