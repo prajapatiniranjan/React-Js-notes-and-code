@@ -14,7 +14,7 @@ function Fetch() {
   useEffect(() => {
     axios.get('http://localhost:3000/Student')
       .then(res => {
-        console.log(res.data);
+        // console.log(res.data);
         setJsonApidata(res.data);
       })
 

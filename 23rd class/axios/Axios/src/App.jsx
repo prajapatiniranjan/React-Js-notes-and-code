@@ -5,7 +5,7 @@ import Fetch from './Fetch'
 function App() {
   return (
 <>
-{/* <Axios/> */}
+<Axios/>
 <Fetch/>
 </>    
   )
